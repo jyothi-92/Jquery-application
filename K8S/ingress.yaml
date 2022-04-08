@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: jyothi-ingress
+  namespace: jquery
+spec:
+  rules:
+  - host: jquery.jyothirreddy.xyz
+    http:
+      paths:
+        backend:
+          servicename: jyothi-service
+            serviceport: 80
+              

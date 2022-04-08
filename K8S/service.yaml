@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jyothi-service
+  namespace: jquery
+spec:
+  selector:
+    app: jyothi-deploy
+  ports:
+  - port: 80
+    targetPort: 80

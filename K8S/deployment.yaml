@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jyothi-deploy
+  namespace: jquery
+spec:
+  selector:
+    matchLabels:
+      app: jyothi-deploy
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: jyothi-deploy
+    spec:
+      containers:
+      - name: jyothi-deploy
+        image: 
+        ports:
+        - containerPort: 80
