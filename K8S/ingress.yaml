@@ -8,6 +8,7 @@ spec:
   - host: jquery.jyothirreddy.xyz
     http:
       paths:
+        path: /
         backend:
           servicename: jyothi-service
             serviceport: 80
