@@ -11,6 +11,9 @@ spec:
       - pathType: Prefix
         path: "/"
         backend:
-          servicename: jyothi-service
-            serviceport: 80
+          service:
+            name: jyothi-service
+            port:
+              number: 80
+
               
