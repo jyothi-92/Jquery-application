@@ -8,6 +8,7 @@ spec:
   - host: jquery.jyothirreddy.xyz
     http:
       paths:
+      - pathType: Prefix
         path: "/"
         backend:
           servicename: jyothi-service
